@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MyFlix - Discover Your Next Favorite</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="theme-switch-wrapper">
+  <label>
+    <input type="checkbox" id="theme-switch" />
+    <span class="switch-label">Toggle Theme</span>
+  </label>
+</div>
+
+
+  <!-- Top Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">MyFlix</div>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="hamburger">&#9776;</label>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#trending">Trending</a></li>
+        <li><a href="#shows">Popular Shows</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#footer">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-text">
+      <h1>MyFlix</h1>
+      <p>Your gateway to binge-worthy content</p>
+      <a href="#trending" class="btn">Explore Trending</a>
+    </div>
+    <div class="hero-image">
+  <svg width="300" height="300" viewBox="0 0 100 100">
+    <defs>
+      <clipPath id="circleClip">
+        <circle cx="50" cy="50" r="40">
+          <animate attributeName="r" values="40;45;40" dur="2s" repeatCount="indefinite" />
+        </circle>
+      </clipPath>
+    </defs>
+
+    <!-- Image clipped inside animated circle -->
+    <image href="binge-removebg-preview.png" x="0" y="0" width="100" height="100" clip-path="url(#circleClip)" />
+
+    <!-- Animated circle stroke -->
+    <circle cx="50" cy="50" r="40" stroke="blue" stroke-width="2" fill="none">
+      <animate attributeName="r" values="40;45;40" dur="2s" repeatCount="indefinite" />
+    </circle>
+  </svg>
+</div>
+
+  </section>
+
+  <!-- Trending Movies -->
+  <section id="trending" class="section">
+    <h2>Trending Movies</h2>
+    <p>Top picks everyone is watching now!</p>
+    <div class="card-container">
+
+      <!-- Repeat this card structure -->
+      <div class="movie-card">
+        <img src="intersteller.jpg" width="215" height="250" alt="Movie Poster">
+        <div class="movie-info">
+            <h3>Interstellar</h3>
+            <p>Interstellar tells the</p>
+            <p>
+                story of a future Earth in a crisis.
+                <span class="duration-inline">2h 49m</span>
+            </p>
+        </div>
+        <div class="hover-actions">
+            <a href="https://www.primevideo.com/dp/amzn1.dv.gti.b4a9f7c6-5def-7e63-9aa7-df38a479333e?autoplay=0&ref_=atv_cf_strg_wb" class="watch-btn">▶ Watch Now</a>
+            <label class="watchlist-label">
+                <input type="checkbox" class="watchlist-toggle" hidden />
+                <span class="toggle-icon"></span>
+        </label>
+        </div>
+      </div>
+
+      <!-- Repeat this card structure -->
+      <div class="movie-card">
+        <img src="Joker_(2019_film)_poster.jpg" width="225" height="250" alt="Movie Poster">
+        <div class="movie-info">
+          <h3>Jocker</h3>
+            <p> Joker is a 2019</p>
+            <p>
+                American psychological thriller film.
+                <span class="duration-inline">2h 2m</span>
+            </p>
+        </div>
+        <div class="hover-actions">
+            <a href="https://www.hotstar.com/in/movies/joker/1971000402?utm_source=gwa" class="watch-btn">▶ Watch Now</a>
+            <label class="watchlist-label">
+                <input type="checkbox" class="watchlist-toggle" hidden />
+                <span class="toggle-icon"></span>
+        </label>
+        </div>
+      </div>
+      <!-- Repeat this card structure -->
+      <div class="movie-card">
+        <img src="toystory.jpg" width="225" height="250" alt="Movie Poster">
+        <div class="movie-info">
+          <h3>Toy Story</h3>
+            <p>Toy Story is a</p>
+            <p>
+                animated adventure comedy film.
+                <span class="duration-inline">1h 21m</span>
+            </p>
+        </div>
+        <div class="hover-actions">
+            <a href="https://www.hotstar.com/in/movies/toy-story/1660010197?utm_source=gwa" class="watch-btn">▶ Watch Now</a>
+            <label class="watchlist-label">
+                <input type="checkbox" class="watchlist-toggle" hidden />
+                <span class="toggle-icon"></span>
+        </label>
+        </div>
+      </div>
+      <!-- Repeat this card structure -->
+      <div class="movie-card">
+        <img src="its a wonerfullife.jpg" width="250" height="250" alt="Movie Poster">
+        <div class="movie-info">
+          <h3>It's a Wonderful Life</h3>
+            <p>It's a Wonderful Life is a</p>
+            <p>
+                Christmas fantasy drama film.
+                <span class="duration-inline">2h 10m</span>
+            </p>
+        </div>
+        <div class="hover-actions">
+            <a href="https://www.primevideo.com/detail/0KVQLCN6748RSPVJK0SN4L79M0/ref=atv_cf_strg_ad?deepLinkingRedirect=1&autoplay=1" class="watch-btn">▶ Watch Now</a>
+            <label class="watchlist-label">
+                <input type="checkbox" class="watchlist-toggle" hidden />
+                <span class="toggle-icon"></span>
+        </label>
+        </div>
+      </div>
+      <!-- Repeat this card structure -->
+      <div class="movie-card">
+        <img src="Oppenheimer_(film).jpg" width="215" height="250" alt="Movie Poster">
+        <div class="movie-info">
+          <h3>Oppenheimer</h3>
+            <p>Oppenheimer is a 2023 </p>
+            <p>
+                epic biographical drama film.
+                <span class="duration-inline">3h</span>
+            </p>
+        </div>
+        <div class="hover-actions">
+            <a href="https://www.primevideo.com/detail/0FJ3FIK7GRE81SQ9V11LI1WSNY/ref=atv_cf_strg_ad?deepLinkingRedirect=1&autoplay=1" class="watch-btn">▶ Watch Now</a>
+            <label class="watchlist-label">
+                <input type="checkbox" class="watchlist-toggle" hidden />
+                <span class="toggle-icon"></span>
+        </label>
+        </div>
+      </div>
+  </section>
+<!-- Popular Shows -->
+<section id="shows" class="section">
+  <h2>Popular Shows</h2>
+  <p>Fan favorites from around the world</p>
+  <div class="card-container">
+
+    <!-- FRIENDS -->
+    <div class="movie-card">
+      <img src="friends.jpg" width="200" height="300" alt="Show Poster">
+      <div class="movie-info">
+        <h3>Friends</h3>
+        <p>Six friends navigate life, love, and hilarious mishaps in NYC.</p>
+        <p><strong>Genre:</strong> Comedy | <strong>Seasons:</strong> 10</p>
+      </div>
+      <div class="hover-actions">
+        <a href="https://www.primevideo.com/detail/0FO86F8U0METJYJ03487W8REVE/ref=atv_cf_strg_ad" target="_blank" class="watch-btn">▶ Play</a>
+        <a href="#modal-friends" class="watch-btn">Learn More</a>
+      </div>
+    </div>
+
+    <!-- STRANGER THINGS -->
+    <div class="movie-card">
+      <img src="strangerthings.jpg" width="200" height="300" alt="Show Poster">
+      <div class="movie-info">
+        <h3>Stranger Things</h3>
+        <p>Strange events unfold in a small town after a boy disappears.</p>
+        <p><strong>Genre:</strong> Sci-Fi, Horror | <strong>Seasons:</strong> 4</p>
+      </div>
+      <div class="hover-actions">
+        <a href="https://www.netflix.com/title/80057281" target="_blank" class="watch-btn">▶ Play</a>
+        <a href="#modal-stranger" class="watch-btn">Learn More</a>
+      </div>
+    </div>
+
+    <!-- PEAKY BLINDERS -->
+    <div class="movie-card">
+      <img src="peaky blinders.jpg" width="200" height="300" alt="Show Poster">
+      <div class="movie-info">
+        <h3>Peaky Blinders</h3>
+        <p>A notorious gangster family's rise in post-WWI Birmingham.</p>
+        <p><strong>Genre:</strong> Crime, Drama | <strong>Seasons:</strong> 6</p>
+      </div>
+      <div class="hover-actions">
+        <a href="https://www.netflix.com/title/80002479" target="_blank" class="watch-btn">▶ Play</a>
+        <a href="#modal-peaky" class="watch-btn">Learn More</a>
+      </div>
+    </div>
+
+    <!-- DARK -->
+    <div class="movie-card">
+      <img src="dark.jpg" width="200" height="300" alt="Show Poster">
+      <div class="movie-info">
+        <h3>Dark</h3>
+        <p>Time travel and family secrets collide in a German town.</p>
+        <p><strong>Genre:</strong> Sci-Fi, Thriller | <strong>Seasons:</strong> 3</p>
+      </div>
+      <div class="hover-actions">
+        <a href="https://www.netflix.com/title/80100172" target="_blank" class="watch-btn">▶ Play</a>
+        <a href="#modal-dark" class="watch-btn">Learn More</a>
+      </div>
+    </div>
+
+    <!-- BREAKING BAD -->
+    <div class="movie-card">
+      <img src="breaking bad.jpg" width="200" height="300" alt="Show Poster">
+      <div class="movie-info">
+        <h3>Breaking Bad</h3>
+        <p>A teacher turns to meth production to secure his family’s future.</p>
+        <p><strong>Genre:</strong> Crime, Drama | <strong>Seasons:</strong> 5</p>
+      </div>
+      <div class="hover-actions">
+        <a href="https://www.netflix.com/title/70143836" target="_blank" class="watch-btn">▶ Play</a>
+        <a href="#modal-breaking" class="watch-btn">Learn More</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODALS (keep same as your existing modals) -->
+  <div id="modal-friends" class="modal">
+    <div class="modal-content">
+      <a href="#shows" class="close">&times;</a>
+      <h3>Friends - Detailed Info</h3>
+      <p><strong>Cast:</strong> Jennifer Aniston, Courteney Cox, Lisa Kudrow, Matt LeBlanc, Matthew Perry, David Schwimmer</p>
+      <p><strong>Creators:</strong> David Crane, Marta Kauffman</p>
+      <p><strong>Details:</strong> One of the most iconic sitcoms of all time with enduring fan love.</p>
+    </div>
+  </div>
+
+    <div id="modal-stranger" class="modal">
+    <div class="modal-content">
+      <a href="#popular" class="close">&times;</a>
+      <h3>Stranger Things - Detailed Info</h3>
+      <p><strong>Cast:</strong> Millie Bobby Brown, Finn Wolfhard, David Harbour, Winona Ryder</p>
+      <p><strong>Creators:</strong> The Duffer Brothers</p>
+      <p><strong>Details:</strong> A sci-fi thriller about parallel dimensions and the mysterious Hawkins Lab.</p>
+    </div>
+  </div>
+
+  <div id="modal-peaky" class="modal">
+    <div class="modal-content">
+      <a href="#popular" class="close">&times;</a>
+      <h3>Peaky Blinders - Detailed Info</h3>
+      <p><strong>Cast:</strong> Cillian Murphy, Paul Anderson, Helen McCrory, Tom Hardy</p>
+      <p><strong>Creator:</strong> Steven Knight</p>
+      <p><strong>Details:</strong> Gritty drama of the Shelby family empire rising in post-war Britain.</p>
+    </div>
+  </div>
+
+  <div id="modal-dark" class="modal">
+    <div class="modal-content">
+      <a href="#popular" class="close">&times;</a>
+      <h3>Dark - Detailed Info</h3>
+      <p><strong>Cast:</strong> Louis Hofmann, Maja Schöne, Karoline Eichhorn, Oliver Masucci</p>
+      <p><strong>Creators:</strong> Baran bo Odar, Jantje Friese</p>
+      <p><strong>Details:</strong> A time travel thriller that explores family ties and destiny across generations.</p>
+    </div>
+  </div>
+
+  <div id="modal-breaking" class="modal">
+    <div class="modal-content">
+      <a href="#popular" class="close">&times;</a>
+      <h3>Breaking Bad - Detailed Info</h3>
+      <p><strong>Cast:</strong> Bryan Cranston, Aaron Paul, Anna Gunn, Bob Odenkirk</p>
+      <p><strong>Creator:</strong> Vince Gilligan</p>
+      <p><strong>Details:</strong> Award-winning drama that follows Walter White’s descent into the criminal world.</p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- User Reviews -->
+  <section id="reviews" class="section">
+    <h2>User Reviews</h2>
+    <br>
+    <div class="reviews">
+      <div class="review-card">
+        <img src="user.jpg" width="225" height="225" alt="User Image">
+        <h4>Patrick Star</h4>
+        <p>Loved the collection!</p>
+      </div>
+      <div class="review-form">
+        <form>
+          <input type="text" placeholder="Name" required>
+          <input type="email" placeholder="Email" required>
+          <textarea placeholder="Your Review" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="footer-content">
+      <div class="social-icons">
+        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+        <a href="https://www.x.com/" target="_blank">Twitter</a>
+        <a href="https://www.youtube.com/" target="_blank">YouTube</a>
+      </div>
+      <div class="footer-links">
+        <a href="https://example.com" target="_blank">Terms</a>
+        <a href="https://example.com" target="_blank">Privacy</a>
+      </div>
+      <a href="#hero" class="back-to-top">Back to Top</a>
+    </div>
+  </footer>
+
+</body>
+</html>
