@@ -417,3 +417,80 @@ html:has(#theme-switch:checked) {
   padding: 0.5rem;
   background: #eee;
 }
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 5%;
+
+  color: var(--text);
+  min-height: 100vh;
+  flex-wrap: wrap;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  color: #fff;
+  max-width: 500px;
+  margin: 1rem;
+}
+
+.gradient-text {
+  font-size: 3.5rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #ff6a00, #ee0979);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: pulseColor 4s infinite alternate;
+}
+
+@keyframes pulseColor {
+  from {
+    background-position: 0%;
+  }
+  to {
+    background-position: 100%;
+  }
+}
+
+.hero-image svg {
+  width: 300px;
+  height: 300px;
+  margin: 1rem;
+}
+
+.animated-bubble {
+  animation: floatUpDown 4s ease-in-out infinite;
+}
+
+@keyframes floatUpDown {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+.tagline {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  color: #ffce54;
+}
+.subtext {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.features {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--text);
+}

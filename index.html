@@ -33,35 +33,42 @@
       </ul>
     </nav>
   </header>
+<!-- Hero Section -->
+<section id="hero" class="hero">
+  <div class="hero-text glass-card">
+    <h1 class="gradient-text">MyFlix</h1>
+    <p class="tagline">Where Stories Come Alive.</p>
+    <p class="subtext">
+      Discover your next obsession. From timeless classics to the latest blockbusters, MyFlix brings you an immersive streaming experience like no other.
+    </p>
+    <p class="features">
+      🎞️ Curated Collections<br>
+      🌐 Global Hits & Hidden Gems<br>
+      🌟 Personalized Recommendations
+    </p>
+    <a href="#trending" class="btn">🎬 Start Exploring</a>
+  </div>
+  <div class="hero-image animated-bubble">
+    <svg width="1000" height="300" viewBox="0 0 100 100">
+      <defs>
+        <clipPath id="circleClip">
+          <circle cx="50" cy="50" r="40">
+            <animate attributeName="r" values="40;45;40" dur="2s" repeatCount="indefinite" />
+          </circle>
+        </clipPath>
+        <filter id="shadow">
+          <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#0ff" />
+        </filter>
+      </defs>
 
-  <!-- Hero Section -->
-  <section id="hero" class="hero">
-    <div class="hero-text">
-      <h1>MyFlix</h1>
-      <p>Your gateway to binge-worthy content</p>
-      <a href="#trending" class="btn">Explore Trending</a>
-    </div>
-    <div class="hero-image">
-  <svg width="300" height="300" viewBox="0 0 100 100">
-    <defs>
-      <clipPath id="circleClip">
-        <circle cx="50" cy="50" r="40">
-          <animate attributeName="r" values="40;45;40" dur="2s" repeatCount="indefinite" />
-        </circle>
-      </clipPath>
-    </defs>
+      <image href="binge-removebg-preview.png" x="0" y="0" width="100" height="100" clip-path="url(#circleClip)" />
+      <circle cx="50" cy="50" r="40" stroke="#00f2ff" stroke-width="2" fill="none" filter="url(#shadow)">
+        <animate attributeName="r" values="40;45;40" dur="2s" repeatCount="indefinite" />
+      </circle>
+    </svg>
+  </div>
+</section>
 
-    <!-- Image clipped inside animated circle -->
-    <image href="binge-removebg-preview.png" x="0" y="0" width="100" height="100" clip-path="url(#circleClip)" />
-
-    <!-- Animated circle stroke -->
-    <circle cx="50" cy="50" r="40" stroke="blue" stroke-width="2" fill="none">
-      <animate attributeName="r" values="40;45;40" dur="2s" repeatCount="indefinite" />
-    </circle>
-  </svg>
-</div>
-
-  </section>
 
   <!-- Trending Movies -->
   <section id="trending" class="section">
